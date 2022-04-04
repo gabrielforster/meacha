@@ -29,10 +29,17 @@ export const CepFinder = () => {
      }
   }
 
+
   return (
     <main>
       <div className='search'>
-        <input type="text" placeholder='00.000-000' value={search} onChange={(e)=>setSearch(e.target.value)} onKeyPress={searchCep} />
+        <h2>Informe o seu CEP</h2>
+        <input type="text"
+        placeholder='00.000-000'
+        maxLength={8}
+        value={search}
+        onChange={(e)=> setSearch(e.target.value)}
+        onKeyPress={searchCep} />
       </div>
 
       <div className='content'>

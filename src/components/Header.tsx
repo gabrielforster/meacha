@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import logo from '../assets/img/meacha.svg'
 
-export const Header = () => {
+export const Header:React.FC = () => {
   return (
     <header>
       <div className='nav-bar'>
@@ -10,14 +10,8 @@ export const Header = () => {
           <Link to='/meacha/'>Me Acha!</Link>
         </div>
         <div className="nav-links">
-          <ul>
-            <li>
-              <Link to='/meacha/'>Achar CEP</Link>
-            </li>
-            <li>
-              <Link to='/meacha/rua'>Achar Rua</Link>
-            </li>
-          </ul>
+            <Link to='/meacha/'>Usar CEP</Link>
+            <Link to='/meacha/rua'>Usar Rua</Link>
         </div>
       </div>
     </header>

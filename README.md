@@ -5,6 +5,6 @@
 
 ## TO DO
  - [ ] Do the readme
- - [ ] Do styles
- - [ ] finish the cep search
+ - [X] Do styles
+ - [X] finish the cep search
  - [ ] start street search

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from './components/Header'
 import { CepFinder } from './components/CepFinder'
 import { StreetFinder } from './components/StreetFinder'
-import './assets/styles/App.css';
+import './assets/styles/App.scss';
 
 function App() {
   return (

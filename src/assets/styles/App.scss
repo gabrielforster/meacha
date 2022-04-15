@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
+
+::root{
+  --black-text: #222;
+  /* --white-text: ; */
+  --white-back: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono';
+}
+
+a{
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+header{
+  background-color: #0fb869;
+}
+
+.nav-bar{
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  
+  .logo{
+    display: flex;
+    margin-left: 1.5rem;
+  
+    img{
+      margin-right: 10px;
+    }
+  }
+  
+  .nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1.5rem;
+  
+    a{
+      margin-right: 2rem;
+    }
+    a:last-child{
+      margin-right: 0;
+    } 
+  }
+}
+
+
+main{
+  max-width: 65%;
+  margin-top: 2rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search{
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  input{
+    margin: 0 auto;
+    width: 12ch;
+    margin-top: .5rem;
+    text-align: center;
+    transition: .6s;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: .4rem;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 1.1rem;
+  }
+  
+  input:focus{
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    background-color: #ccc;
+    color: #222;
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.results{
+  margin: 1rem auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  h2{text-align: center;}
+
+}
+
+.data {
+  margin: 1rem auto 0
+
+  h3 {font-weight: 400;}
+}
+
+
+.map {
+  margin: 1rem auto 0;
+
+  iframe{
+    border: none;
+    outline: none;
+  }
+}

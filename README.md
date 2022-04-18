@@ -4,7 +4,8 @@
 </div>
 
 ## TO DO
- - [ ] Do the readme
- - [X] Do styles
- - [X] finish the cep search
- - [ ] start street search
+
+- [ ] Do the readme
+- [x] Do styles
+- [x] finish the cep search
+- [ ] start street search

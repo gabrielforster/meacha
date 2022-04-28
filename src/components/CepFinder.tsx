@@ -34,7 +34,8 @@ export const CepFinder = () => {
         <input
           type='text'
           placeholder='00.000-000'
-          maxLength={8}
+          maxLength={10}
+          pattern='/^[0-9]{2}.[0-9]{3}-[0-9]{2}'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           onKeyPress={searchCep}

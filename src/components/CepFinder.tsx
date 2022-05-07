@@ -27,18 +27,29 @@ export const CepFinder = () => {
     }
   };
 
+  const handlePattern = (evt: any, search: any) => {
+    if(evt.key === 'Enter'){
+      if(search.match('/^[0-9]{5}-[0-9]{3}$/') !== false) {
+        console.log(search, typeof(search))
+        search.replace('-', '')
+        console.log(search)
+        searchCep(evt)
+      } else console.log('teste')
+  }
+  }
+
   return (
     <main>
       <div className='search'>
         <h2>Informe o seu CEP</h2>
         <input
           type='text'
-          placeholder='00.000-000'
+          placeholder='Digite seu CEP'
           maxLength={10}
-          pattern='/^[0-9]{2}.[0-9]{3}-[0-9]{2}'
+          // pattern='/^[0-9]{5}-[0-9]{3}$/'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          onKeyPress={searchCep}
+          onKeyPress={(evt) => handlePattern(evt, search)}
         />
       </div>
 
